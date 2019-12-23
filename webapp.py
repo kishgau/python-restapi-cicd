@@ -1,18 +1,19 @@
 #!/usr/bin/env python
 from flask import Flask
 
-app = Flask(__name__)
+webapp = Flask(__name__)
 
 
-@app.route('/')
+@webapp.route('/')
+@webapp.route('/adt/')
 def entry_splash_():
-    return '/adt/ticker : ASX daily average turnover!\ne.g. /adt/BHP'
+    return 'ASX daily average turnover!'
 
 
-@app.route('/adt/<ticker>/')
+@webapp.route('/adt/<ticker>/')
 def get_adt(ticker):
-    return 'Hello %s!\n' % ticker
+    return 'ADT for %s!\n' % ticker
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0')  # open for everyone
+    webapp.run(host='0.0.0.0')  # open for everyone
