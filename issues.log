@@ -1,0 +1,10 @@
+1.The directory '/.cache/pip/http' or its parent directory is not owned by the current
+Ans:pip3 install --no-cache-dir -r requirements.txt
+
+
+2.Could not install packages due to an EnvironmentError: [Errno 13] Permission denied: '/.local'
+        docker { 
+           image 'python:3.7.2' 
+    -->     args '--user 0:0'   <--- run as root inside docker container
+       }
+

@@ -16,11 +16,11 @@ pipeline {
         sh 'python test.py'
       }   
     }
-  }
-  post {
-    cleanup {
-        script {clean_up()}
-    }
+    stage('CleanWorkspace') {
+         steps {
+          cleanWs()
+          }
+
   }
 
 
