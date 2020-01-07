@@ -1,5 +1,4 @@
 # python-restapi-cicd
-<<<<<<< HEAD
 
 Objectives:
 1. Basic API app with Flask
@@ -17,5 +16,5 @@ Three routes
 =======
 Courtsey : Joaquín Menchaca
 https://medium.com/@Joachim8675309/jenkins-ci-pipeline-with-python-8bf1a0234ec3
->>>>>>> 6a6f1c1ddfa903e26881fa4a150c65beabc02249
+
 
