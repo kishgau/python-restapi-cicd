@@ -1,17 +1,14 @@
 # python-restapi-cicd
 
-Objectives:
-1. Basic API app with Flask
-2. xUnit tests 
-3. Jenkins set up CI
+Objectives: Using Jenkins to build a CI pipeline and run tests against app running in docker container.
 
+Components
+1. Basic API app with Flask - webapp.py
+2. xUnit tests - test.py
+3. Jenkinsfile with declarative syntax 
 
-1. Basic API set up
-Three routes
-  / : splash screen : in
- /adt/<>: expose a dummy service "adt or avg daily turnover" 
-        : pass ASX ticker code as URI params
-        : .e.g. /adt/BHP 
+To do :
+ Add webhooks to trigger CI pipeline if any changes in repo
  
 =======
 Courtsey : Joaquín Menchaca
